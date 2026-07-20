@@ -42,6 +42,8 @@ uvicorn main:app --reload
 
 4. Tarayıcınızda http://127.0.0.1:8000 adresine giderek uygulamayı doğrudan kullanabilirsiniz!
 
+---
+
 ## 📸 Uygulama Ekran Görüntüsü
 
 ![Uygulama Ekran Görüntüsü](ekran_goruntusu.png)
