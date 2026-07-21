@@ -1,4 +1,62 @@
-# 🏠 Ev Fiyatı Tahmin Uygulaması (End-to-End ML & FastAPI)
+# 🏠 House Price Prediction Application (Ev Fiyatı Tahmini Uygulaması)
+
+[English](#english) | [Türkçe](#türkçe)
+
+---
+
+<a name="english"></a>
+## 🇬🇧 English
+
+### 📌 Overview
+
+This project is an end-to-end web application that estimates house market values based on property features (Square Meters, Number of Rooms, Building Age) using a machine learning model.
+
+Designed using an AI-Assisted Development approach; model training, API architecture, input validation, and frontend integration processes were executed via pair programming.
+
+---
+
+## 🛠️ Tech Stack & Libraries
+
+* Python 3.12
+* Scikit-learn (Linear Regression Model)
+* Pandas & NumPy (Data Processing & Preparation)
+* FastAPI (Web API & Frontend Server)
+* Uvicorn (ASGI Server)
+* Joblib (Model Serialization / Saving)
+
+---
+
+## 🚀 Key Features
+
+* High Model Performance: High accuracy achieved on the dataset using a Linear Regression model (R² ≈ 97%).
+* User-Friendly Web Interface: Clean, fast, and user-centric HTML/CSS interface instead of complex raw API outputs.
+* Input Validation: Security and consistency rules preventing invalid or extreme out-of-bound values at both the HTML5 and FastAPI backend levels.
+* Technical Documentation: Interactive Swagger API documentation automatically available via the `/docs` route.
+
+---
+
+## 💻 Installation & Usage
+
+To run and test the project on your local machine, you can follow these steps:
+
+1. Clone the Repository:
+git clone https://github.com/262yunus/ev-fiyat-tahmini.git
+cd ev-fiyat-tahmini
+
+2. Install Required Dependencies:
+pip install -r requirements.txt
+
+3. Run the Application:
+uvicorn main:app --reload
+
+4. Open http://127.0.0.1:8000 in your browser to use the application directly!
+
+---
+
+<a name="türkçe"></a>
+## 🇹🇷 Türkçe
+
+### 📌 Genel Bakış
 
 Bu proje, makine öğrenmesi modeli kullanarak ev özelliklerine (Metrekare, Oda Sayısı, Bina Yaşı) göre tahmini piyasa değerini hesaplayan uçtan uca bir web uygulamasıdır.
 
@@ -44,6 +102,6 @@ uvicorn main:app --reload
 
 ---
 
-## 📸 Uygulama Ekran Görüntüsü
+## 📸 Application Screenshot // Uygulama Ekran görüntüsü
 
-![Uygulama Ekran Görüntüsü](ekran_goruntusu.png)
+![Application Screenshot](ekran_goruntusu.png)
