@@ -1,49 +1,65 @@
-# 🏠 Ev Fiyatı Tahmin Uygulaması (End-to-End ML & FastAPI)
+# 🏠 House Price Prediction Application (Ev Fiyatı Tahmini Uygulaması)
 
-Bu proje, makine öğrenmesi modeli kullanarak ev özelliklerine (Metrekare, Oda Sayısı, Bina Yaşı) göre tahmini piyasa değerini hesaplayan uçtan uca bir web uygulamasıdır.
-
-AI-Assisted Development (Yapay Zeka Destekli Geliştirme) yaklaşımıyla tasarlanmış; model eğitimi, API mimarisi, girdi doğrulama (validation) ve arayüz entegrasyonu süreçleri eşli kodlama (pair programming) ile yürütülmüştür.
+[English](#english) | [Türkçe](#türkçe)
 
 ---
 
-## 🛠️ Teknolojiler ve Kütüphaneler
+<a name="english"></a>
+## 🇬🇧 English
 
-* Python 3.12
-* Scikit-learn (Linear Regression Modeli)
-* Pandas & NumPy (Veri İşleme ve Hazırlık)
-* FastAPI (Web API & Arayüz Sunucusu)
-* Uvicorn (ASGI Server)
-* Joblib (Model Serileştirme / Kaydetme)
+### 📌 Overview
+An end-to-end Machine Learning web application that predicts house prices based on features such as square meters, number of rooms, and building age. Built with **FastAPI** on the backend, **Scikit-learn** for machine learning, and a clean modern UI (HTML5/CSS3) on the frontend.
 
----
+### ✨ Key Features
+- **End-to-End Pipeline:** ML model integrated directly with a REST API.
+- **Real-Time Predictions:** Instant house value estimation based on user input.
+- **User-Friendly UI:** Modern, responsive HTML/CSS interface with input bounds validation and formatted output.
+- **Input Validation:** Input limits pre-defined (`20 - 500 m²`, `1 - 10 rooms`, `0 - 50 age`) for optimal model performance.
 
-## 🚀 Öne Çıkan Özellikler
+### 🛠️ Tech Stack
+- **Machine Learning:** Python, Scikit-learn, Pandas, NumPy
+- **Backend:** FastAPI, Uvicorn
+- **Frontend:** HTML5, CSS3, JavaScript (Fetch API)
+- **Version Control:** Git & GitHub
 
-* Yüksek Model Başarısı: Veri seti üzerinde eğitilen Lineer Regresyon modeli ile yüksek başarım (R2 ≈ %97).
-* Kullanıcı Dostu Web Arayüzü: Karmaşık API çıktıları yerine sade, hızlı ve kullanıcı odaklı HTML/CSS arayüzü.
-* Girdi Doğrulama (Validation): Hatalı veya aşırı uç değerlerin girilmesini hem HTML5 hem de FastAPI arka planında engelleyen güvenlik kuralı.
-* Teknik Dokümantasyon: /docs adresi üzerinden erişilebilen otomatik Swagger API dokümantasyonu.
+### 🚀 Getting Started
 
----
+#### Prerequisites
+- Python 3.10+
 
-## 💻 Kurulum ve Çalıştırma
+#### Installation & Run
+1. **Clone the repository:**
+   git clone https://github.com/262yunus/ev-fiyat-tahmini.git
+   cd ev-fiyat-tahmini
 
-Projeyi kendi bilgisayarınızda çalıştırıp denemek için şu adımları izleyebilirsiniz:
+2. **Run the server:**
+   python -m uvicorn main:app --reload
 
-1. Repoyu Klonlayın:
-git clone https://github.com/262yunus/ev-fiyat-tahmini.git
-cd ev-fiyat-tahmini
-
-2. Gerekli Kütüphaneleri Yükleyin:
-pip install -r requirements.txt
-
-3. Uygulamayı Başlatın:
-uvicorn main:app --reload
-
-4. Tarayıcınızda http://127.0.0.1:8000 adresine giderek uygulamayı doğrudan kullanabilirsiniz!
+3. **Open in browser:**
+   Go to `http://127.0.0.1:8000`
 
 ---
 
-## 📸 Uygulama Ekran Görüntüsü
+<a name="türkçe"></a>
+## 🇹🇷 Türkçe
 
-![Uygulama Ekran Görüntüsü](ekran_goruntusu.png)
+### 📌 Genel Bakış
+Metrekare, oda sayısı ve bina yaşı gibi değişkenleri kullanarak ev fiyatlarını tahmin eden uçtan uca (end-to-end) Makine Öğrenmesi web uygulaması. Backend tarafında **FastAPI**, makine öğrenmesinde **Scikit-learn** ve frontend tarafında modern HTML/CSS kullanılarak geliştirilmiştir.
+
+### ✨ Öne Çıkan Özellikler
+- **Uçtan Uca Mimari:** Makine öğrenmesi modelinin REST API ile doğrudan entegrasyonu.
+- **Gerçek Zamanlı Tahmin:** Kullanıcı girdilerine dayalı anlık piyasa değeri tahmini.
+- **Modern Arayüz:** Kullanıcı dostu, girdi sınırlandırmaları olan ve çıktıları biçimlendirilmiş şık tasarım.
+- **Girdi Doğrulama:** Model kararlılığı için sınırlandırılmış veri aralıkları.
+
+### 🛠️ Kullanılan Teknolojiler
+- **Makine Öğrenmesi:** Python, Scikit-learn, Pandas, NumPy
+- **Backend:** FastAPI, Uvicorn
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Versiyon Kontrolü:** Git & GitHub
+
+---
+
+## 📸 Application Screenshot / Uygulama Ekran Görüntüsü
+
+![Application Screenshot](ekran_goruntusu.png)
