@@ -40,14 +40,20 @@ Designed using an AI-Assisted Development approach; model training, API architec
 To run and test the project on your local machine, you can follow these steps:
 
 1. Clone the Repository:
+```bash
 git clone https://github.com/262yunus/ev-fiyat-tahmini.git
 cd ev-fiyat-tahmini
+```
 
 2. Install Required Dependencies:
+``` bash
 pip install -r requirements.txt
+```
 
 3. Run the Application:
+```bash
 uvicorn main:app --reload
+```
 
 4. Open http://127.0.0.1:8000 in your browser to use the application directly!
 
@@ -89,14 +95,20 @@ AI-Assisted Development (Yapay Zeka Destekli Geliştirme) yaklaşımıyla tasarl
 Projeyi kendi bilgisayarınızda çalıştırıp denemek için şu adımları izleyebilirsiniz:
 
 1. Repoyu Klonlayın:
+```bash
 git clone https://github.com/262yunus/ev-fiyat-tahmini.git
 cd ev-fiyat-tahmini
+```
 
 2. Gerekli Kütüphaneleri Yükleyin:
+```bash
 pip install -r requirements.txt
+```
 
 3. Uygulamayı Başlatın:
+```bash
 uvicorn main:app --reload
+```
 
 4. Tarayıcınızda http://127.0.0.1:8000 adresine giderek uygulamayı doğrudan kullanabilirsiniz!
 
